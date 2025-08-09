@@ -39,4 +39,4 @@ const Icon = ({ src }) => (
   <img src={src} className="duration-200 rounded-sm hover:scale-110" />
 );
 
-export default Frameworks;
+export default FrameWorks;
