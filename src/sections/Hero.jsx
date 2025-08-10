@@ -8,7 +8,7 @@ import { Float } from "@react-three/drei";
 import { easing } from "maath";
 import { Suspense } from "react";
 import { Loader } from "../components/Loader";
-import { Pointer } from "../components/Pointer.jsx";
+import { Pointer } from "../components/pointer.jsx";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -38,7 +38,7 @@ const Hero = () => {
         </Canvas>
       </figure>
       <Pointer>
-        <div className="text-2xl">⚪</div>
+        <div className="text-2xl w-10 h-10 backdrop-filter border-white-100  border-5 bg-burn-color backdrop-invert-100 rounded-full"></div>
       </Pointer>
     </section>
   );

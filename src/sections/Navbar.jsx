@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Pointer } from "../components/Pointer.jsx";
+import { Pointer } from "../components/pointer.jsx";
 
 function Navigation() {
   return (
