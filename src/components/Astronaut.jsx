@@ -5,6 +5,7 @@ import { useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 
 export function Astronaut(props) {
+  const isMobile = window.innerWidth <= 768;
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb"

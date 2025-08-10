@@ -13,7 +13,10 @@ import { Pointer } from "../components/pointer.jsx";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
-    <section className="relative flex items-start justify-center md:items-start min-h-screen overflow-hidden c-space">
+    <section
+      id="home"
+      className="relative flex items-start justify-center md:items-start min-h-screen overflow-hidden c-space"
+    >
       <HeroText />
       <ParallaxBackground />
       <figure
