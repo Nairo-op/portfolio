@@ -8,6 +8,7 @@ import { Float } from "@react-three/drei";
 import { easing } from "maath";
 import { Suspense } from "react";
 import { Loader } from "../components/Loader";
+import { Pointer } from "../components/Pointer.jsx";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -28,10 +29,17 @@ const Hero = () => {
               />
             </Float>
           </Suspense>
-          <OrbitControls enableZoom={false} />
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            enableRotate={false}
+          />
           <Rig />
         </Canvas>
       </figure>
+      <Pointer>
+        <div className="text-2xl">⚪</div>
+      </Pointer>
     </section>
   );
 };

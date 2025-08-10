@@ -1,27 +1,28 @@
 import React from "react";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { Pointer } from "../components/Pointer.jsx";
 
 function Navigation() {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a href="#home" className="nav-link">
+        <a href="#home" className="nav-link cursor-none">
           Home
         </a>
       </li>
       <li className="nav-li">
-        <a href="#about" className="nav-link">
+        <a href="#about" className="nav-link cursor-none">
           About
         </a>
       </li>
       <li className="nav-li">
-        <a href="#projects" className="nav-link">
+        <a href="#projects" className="nav-link cursor-none">
           Projects
         </a>
       </li>
       <li className="nav-li">
-        <a href="#contact" className="nav-link">
+        <a href="#contact" className="nav-link cursor-none">
           Contact
         </a>
       </li>
@@ -36,7 +37,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href=""
-            className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
+            className="text-xl font-bold transition-colors text-neutral-400 hover:text-white cursor-none"
           >
             Ajnas
           </a>
@@ -68,6 +69,9 @@ export const Navbar = () => {
           </nav>
         </motion.div>
       )}
+      <Pointer>
+        <div className="text-2xl">👆</div>
+      </Pointer>
     </div>
   );
 };
