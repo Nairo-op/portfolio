@@ -30,6 +30,7 @@ function Navigation() {
   );
 }
 export const Navbar = () => {
+  const isMobile = window.innerWidth <= 768;
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-1g bg-primary/70">
@@ -69,9 +70,11 @@ export const Navbar = () => {
           </nav>
         </motion.div>
       )}
-      <Pointer>
-        <div className="text-2xl">👆</div>
-      </Pointer>
+      {!isMobile ? (
+        <Pointer>
+          <div className="text-2xl">👆</div>
+        </Pointer>
+      ) : null}
     </div>
   );
 };

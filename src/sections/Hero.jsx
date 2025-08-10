@@ -37,9 +37,11 @@ const Hero = () => {
           <Rig />
         </Canvas>
       </figure>
-      <Pointer>
-        <div className="text-2xl w-10 h-10 backdrop-filter border-white-100  border-5 bg-burn-color backdrop-invert-100 rounded-full"></div>
-      </Pointer>
+      {!isMobile ? (
+        <Pointer>
+          <div className="text-2xl w-10 h-10 backdrop-filter border-white-100  border-5 bg-burn-color backdrop-invert-100 rounded-full"></div>
+        </Pointer>
+      ) : null}
     </section>
   );
 };
