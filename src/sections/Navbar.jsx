@@ -33,7 +33,7 @@ export const Navbar = () => {
   const isMobile = window.innerWidth <= 768;
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-1g bg-primary/70">
+    <div className="fixed inset-x-0 z-20 w-full  backdrop-blur-lg bg-primary/70">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
